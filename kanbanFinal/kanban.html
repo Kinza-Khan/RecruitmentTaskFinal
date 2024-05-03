@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <section id="kanban">
+    <div class="container">
+        <button class="btn" id="addBtn">Add</button>
+        <div class="row">
+            <div class="col">
+                <h1>Pending</h1>
+                <div class="pending">
+
+                    
+                </div>
+              
+            </div>
+            <div class="col">
+                <h1>In Progress</h1>
+               <div class="inProgress"></div>
+            </div>
+             <div class="col">
+                <h1>Done</h1>
+                <div class="done"></div>
+              </div>
+          
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeBtn">&times;</span>
+        <h2>Add Item</h2>
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" required></textarea><br>
+       
+      <label for="status">Status:</label><br>
+        <select id="status" name="status" required>
+            <option value="done">Done</option>
+            <option value="pending">Pending</option>
+            <option value="inProgress">In Progress</option>
+        </select>
+        <button id="submitBtn">Add</button>
+    </div>
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

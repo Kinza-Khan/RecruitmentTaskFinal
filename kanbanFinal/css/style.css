@@ -1,0 +1,103 @@
+.row{
+    background-color: rgb(211, 155, 70);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    
+}
+.row .col{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    width: 25%;
+}
+.row .col h1{
+    text-align: center;
+}
+.container
+{
+    padding: 20px;
+}
+.btn{
+    width: 20%;
+    padding: 10px 15px;
+    background-color: rgb(73, 66, 66);
+    color: white;
+    border-radius:5px ;
+    margin-bottom: 10px;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 5px;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.card-buttons button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    margin-right: 5px;
+}
+
+.delete-button {
+    background-color: #f44336; /* Red */
+    color: white;
+}
